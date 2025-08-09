@@ -1,0 +1,20 @@
+<layout width="240" height="240" font="Roboto-Bold.ttf" loadFontSize="18" fontColor="FFFFFFF">
+   
+
+    <!-- ------------------------------------------------ -->
+    <!-- ---------------Background Image----------------- -->
+    <!-- ------------------------------------------------ -->
+    <image src="images/Funkey_S.png" x="0" y="0" height="stretch" width="stretch" layer="0"/>
+
+    <text value="Loading..." x="center" y="bottom" xOrigin="center" xOffset="0" yOrigin="center" yOffset="-20" height="33" width="stretch" fontSize="32" layer="3">
+        <onIdle>
+            <set duration="0">
+                <animate type="alpha" from="1" to=".5" algorithm="easeinquadratic"/>
+            </set>
+            <set duration="0">
+                <animate type="alpha" from=".5" to="1" algorithm="easeinquadratic"/>
+            </set>
+        </onIdle>
+    </text> 
+
+ </layout>
